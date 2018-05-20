@@ -6,13 +6,14 @@ end
 function State:update(dt)
 end 
 
-function State:draw(dt)
+function State:draw()
 end
 
-function State:new ()
+function State:new (arg)
     o = {}
     setmetatable(o, self)
     self.__index = self
+    o:load(arg)
     return o
 end
 

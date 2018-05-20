@@ -4,9 +4,11 @@ game_global = {
     state=PlayState:new()
 }
 
-print(game_global.state)
+function love.load(arg)
+    love.window.setMode(800, 600, {msaa=0})
+end
 
-function love.draw(dt)
+function love.draw()
     love.graphics.print("Hello World", 400, 300)
-    game_global.state:draw(dt)
+    game_global.state:draw()
 end
