@@ -10,7 +10,7 @@ function Object:draw()
 end
 
 function Object:new(arg)
-    o = {}
+    local o = {}
     setmetatable(o, self)
     self.__index = self
     o:load(arg)

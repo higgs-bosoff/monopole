@@ -10,7 +10,7 @@ function State:draw()
 end
 
 function State:new (arg)
-    o = {}
+    local o = {}
     setmetatable(o, self)
     self.__index = self
     o:load(arg)
