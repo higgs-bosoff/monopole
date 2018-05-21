@@ -1,7 +1,7 @@
 PlayState = require('states.play')
 
 game_global = {
-    state=PlayState:new()
+    state=PlayState:new('arena_base')
 }
 
 function love.load(arg)
